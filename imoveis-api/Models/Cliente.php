@@ -3,8 +3,7 @@ class Cliente {
 
     public $id_cliente; 
     public $nome;
-    public $cpf;
-    public $id_user;   
+    public $cpf; 
     public $rg;
     public $email_contato;
     public $tel_contato;

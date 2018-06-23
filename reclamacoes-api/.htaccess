@@ -1,0 +1,10 @@
+Header add Access-Control-Allow-Origin "http://localhost:4200"
+Header add Access-Control-Allow-Headers "X-Requested-With, Content-Type, Accept, Origin, Authorization"
+Header add Access-Control-Allow-Methods "GET, POST, OPTIONS,PUT"
+Header add Access-Control-Allow-Credentials "true"
+Header add Access-Control-Allow-Headers "Content-Type"
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php?_url=/$1 [QSA,L]
+</IfModule>

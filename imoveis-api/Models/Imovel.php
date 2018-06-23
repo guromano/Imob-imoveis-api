@@ -12,7 +12,10 @@ class Imovel {
     public $cidade;
     public $estado;  
     public $pais;
+    public $status_aluguel;
+    public $reclamacoes;
     public $vl_aluguel;
+    public $tipo;
 
 }
 ?>
